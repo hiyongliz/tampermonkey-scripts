@@ -4,8 +4,8 @@
 // @version      1.0
 // @description  自动关闭Linuxdo首页的403错误对话框
 // @author       YourName
-// @match        https://linuxdo.com/*
-// @match        https://*.linuxdo.com/*
+// @match        https://linux.do/*
+// @match        https://*.linux.do/*
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
