@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  在 Hacker News 列表页点击文章标题时阻止当前页跳转，并在新标签页打开文章和评论
 // @match        https://news.ycombinator.com/*
-// @grant        none
+// @grant        GM_openInTab
 // @run-at       document-end
 // ==/UserScript==
 
@@ -66,12 +66,16 @@
             }
 
             const text = link.textContent ? link.textContent.trim().toLowerCase() : '';
-            if (text.includes('comment')) {
+            if (text.includes('comment') || text === 'discuss') {
                 return link;
             }
         }
 
         return null;
+    }
+
+    function openInNewTab(url) {
+        return GM_openInTab(url, { active: false, insert: true })
     }
 
     function handleClick(event) {
@@ -91,10 +95,10 @@
         const commentsLink = getCommentsLink(storyLink);
 
         event.preventDefault();
-        window.open(storyLink.href, '_blank', 'noopener');
+        openInNewTab(storyLink.href);
 
         if (commentsLink && commentsLink.href !== storyLink.href) {
-            window.open(commentsLink.href, '_blank', 'noopener');
+            openInNewTab(commentsLink.href);
         }
     }
 
