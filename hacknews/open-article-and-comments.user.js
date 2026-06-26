@@ -74,8 +74,8 @@
         return null;
     }
 
-    function openInNewTab(url) {
-        return GM_openInTab(url, { active: false, insert: true })
+    function openInNewTab(url, active) {
+        return GM_openInTab(url, { active, insert: true })
     }
 
     function handleClick(event) {
@@ -95,10 +95,10 @@
         const commentsLink = getCommentsLink(storyLink);
 
         event.preventDefault();
-        openInNewTab(storyLink.href);
+        openInNewTab(storyLink.href, true);
 
         if (commentsLink && commentsLink.href !== storyLink.href) {
-            openInNewTab(commentsLink.href);
+            openInNewTab(commentsLink.href, false);
         }
     }
 

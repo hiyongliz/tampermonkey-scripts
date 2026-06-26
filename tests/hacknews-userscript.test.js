@@ -187,3 +187,16 @@ test('uses GM_openInTab for both tabs', () => {
   ])
   assert.equal(result.openCalls.length, 0)
 })
+
+test('opens story tab active and comments tab inactive', () => {
+  const result = runUserscript({
+    storyHref: 'https://example.com/story',
+    commentsHref: 'https://news.ycombinator.com/item?id=4',
+    commentsText: '8 comments',
+  })
+
+  assert.deepEqual(result.gmCalls.map((call) => call.options), [
+    { active: true, insert: true },
+    { active: false, insert: true },
+  ])
+})
