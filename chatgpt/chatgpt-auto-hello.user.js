@@ -4,6 +4,7 @@
 // @version      0.1
 // @description  在 chatgpt.com 打开页面时自动在输入框输入 "hello"
 // @match        https://chatgpt.com/*
+// @icon         https://chatgpt.com/favicon.ico
 // @run-at       document-idle
 // @grant        none
 // ==/UserScript==

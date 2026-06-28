@@ -4,6 +4,7 @@
 // @version      1.1
 // @description  在 Hacker News 列表页按右方向键或 J 加载下一页，左方向键或 K 返回上一页
 // @match        https://news.ycombinator.com/*
+// @icon         https://news.ycombinator.com/y18.svg
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==

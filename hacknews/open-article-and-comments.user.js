@@ -4,6 +4,7 @@
 // @version      1.0
 // @description  在 Hacker News 列表页点击文章标题时阻止当前页跳转，并在新标签页打开文章和评论
 // @match        https://news.ycombinator.com/*
+// @icon         https://news.ycombinator.com/y18.svg
 // @grant        GM_openInTab
 // @run-at       document-end
 // ==/UserScript==

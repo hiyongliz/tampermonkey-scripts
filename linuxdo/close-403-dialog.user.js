@@ -6,6 +6,7 @@
 // @author       YourName
 // @match        https://linux.do/*
 // @match        https://*.linux.do/*
+// @icon         https://linux.do/uploads/default/optimized/3X/9/d/9dd49731091ce8657e944cd0be0b4e16d2f93e06_2_180x180.png
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==

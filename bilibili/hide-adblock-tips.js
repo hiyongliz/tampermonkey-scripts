@@ -7,6 +7,7 @@
 // @match        https://www.bilibili.com/*
 // @match        https://space.bilibili.com/*
 // @match        https://live.bilibili.com/*
+// @icon         https://www.bilibili.com/favicon.ico
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==

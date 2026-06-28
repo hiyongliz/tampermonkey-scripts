@@ -4,6 +4,7 @@
 // @version      1.0
 // @description  按"越新越红、评论越多越红"给 Hacker News 列表页的时间与评论数文字上色
 // @match        https://news.ycombinator.com/*
+// @icon         https://news.ycombinator.com/y18.svg
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==

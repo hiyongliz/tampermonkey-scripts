@@ -5,6 +5,7 @@
 // @description  隐藏即刻网页版中的"在web版打开"按钮等元素，检测到"在web版打开"字样时自动刷新页面
 // @author       YourName
 // @match        https://*.okjike.com/*
+// @icon         https://web-assets.okjike.com/web/main/static/images/favicon.ico
 // @grant        none
 // ==/UserScript==
 
